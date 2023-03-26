@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="webbapp2.js" type="module"></script>
+    <title>Decision Tree Inleveropdracht</title>
+</head>
+
+<body class="bg-gray-200 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-blue-600 mb-4">Model inladen in Web APP</h2>
+            <h3 class="text-lg font-bold text-green-600">Webapp Decision Tree</h3>
+            
+        </div>
+        <div><a href="./index.html" class="bg-blue-500 hover:bg-bleu-700 text-white font-bold py-2 px-4 rounded-lg">This is where the model is trained.</a> </div>
+        <div class="my-8">
+            <p class="text-lg text-gray-600 mb-2">1 wilt zeggen je hebt wel diabetes</p>
+            <p class="text-lg text-gray-600 mb-2">0 wilt zeggen je hebt geen diabetes</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center mb-8">
+            <input type="text" id="glucose" placeholder="Wat is je glucose gehalte?" class="w-full md:w-64 py-2 px-4 border border-gray-400 rounded-md mb-2 md:mr-2"/>
+            <input type ="text" id="pedigree" placeholder="pedigree waarde  tussen 0 en 3 (indien bekend)" class="w-full md:w-64 py-2 px-4 border border-gray-400 rounded-md mb-2 md:mr-2"/>
+            <input type ="text" id="age" placeholder="Hoe oud ben je?" class="w-full md:w-64 py-2 px-4 border border-gray-400 rounded-md mb-2 md:mr-2"/>
+            <button id="submit-button" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md">Predict</button>
+        </div>
+        
+        <div class="my-8">
+            <p id="userInput" class="text-lg text-gray-600"></p>
+        </div>
+        <br />
+        <br />
+        
+        <div id="view" class="bg-white shadow-md rounded-md p-8"></div>
+    </div>
+</body>
+</html>

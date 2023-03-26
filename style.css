@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 208, 208);
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+div {
+    background-color: white;
+    padding: 18px;
+    margin: 10px;
+}
+
+#chart {
+    overflow: scroll;
+    padding:20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table, tr, td {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+td {
+    padding: 5px;
+}
+
